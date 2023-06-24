@@ -36,6 +36,7 @@ export const SarnJaoTRUE = () => {
                 height: "500px",
               }}
             />
+            {/* <img src="sarn-component/fetish-1.png" width="190" className="" /> */}
             <img
               className="mt-2"
               src="sarn-component/table.png"
@@ -43,11 +44,13 @@ export const SarnJaoTRUE = () => {
                 height: "250px",
               }}
             />
+            {/* <img src="sarn-component/fetish-2.png" width="190" className="" /> */}
             <textarea
               value={wish}
               onChange={handleSetWish}
               className="text-lg rounded-lg bg-red-100"
               id="wish-area"
+              // title="?"
             />
             <button
               onClick={handleMakeWish}
