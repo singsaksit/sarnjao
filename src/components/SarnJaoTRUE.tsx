@@ -3,24 +3,11 @@ import { useEffect, useState } from "react";
 
 import { god } from "./god";
 
-import { Draggable } from "../lib/Draggable";
-import { Droppable } from "../lib/Droppable";
-import { DndContext } from "@dnd-kit/core";
-
 export const SarnJaoTRUE = () => {
   const [wish, setWish] = useState("ขอให้ PETEZA เลิกมีพฤติกรรมเกียน❓");
   const [godPath, setGodPath] = useState("");
   const [parent, setParent] = useState(null);
 
-  const draggable = (
-    <Draggable id="draggable">
-      <img
-        src="sarn-component/fetish-1.png"
-        width="190"
-        className="absolute right-10"
-      />
-    </Draggable>
-  );
 
   useEffect(() => {
     if (godPath === "") {
@@ -68,12 +55,6 @@ export const SarnJaoTRUE = () => {
             <div className="flex flex-row justify-center">
               <img src="sarn-component/fetish-2.png" width="190" className="" />
             </div>
-            <DndContext onDragEnd={handleDragEnd}>
-              {!parent ? draggable : null}
-              <Droppable id="droppable">
-                {parent === "droppable" ? draggable : "วางไว้บนโต๊ะที่พี่"}
-              </Droppable>
-            </DndContext>
             <img
               className="mt-2"
               src="sarn-component/table.png"
