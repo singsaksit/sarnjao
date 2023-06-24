@@ -1,16 +1,17 @@
 import { TopComponent } from "./sarn/TopComponent";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { god } from "./god";
 
 export const SarnJaoTRUE = () => {
   const [wish, setWish] = useState("มีพฤติกรรมเกียน❓");
+  const [godPath, setGodPath] = useState("");
 
-  function getGod() {
-    return god[Math.floor(god.length * Math.random())];
-  }
-
-  const currentGodPath = getGod();
+  useEffect(() => {
+    if (godPath === "") {
+      setGodPath(god[Math.floor(god.length * Math.random())]);
+    }
+  }, []);
 
   function handleSetWish(e: any) {
     setWish(e.target.value);
@@ -31,7 +32,7 @@ export const SarnJaoTRUE = () => {
         <div className="h-full w-full flex justify-center mt-32">
           <div className="flex flex-col">
             <img
-              src={currentGodPath}
+              src={godPath}
               style={{
                 height: "500px",
               }}
