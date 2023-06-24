@@ -23,7 +23,7 @@ export const SarnJaoTRUE = () => {
   }
 
   return (
-    <div className="w-full min-h-screen h-screen">
+    <div className="w-full min-h-screen">
       <div className="w-full h-full bg-red-300">
         <div className="flex justify-center">
           <TopComponent />
