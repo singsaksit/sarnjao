@@ -8,7 +8,6 @@ export const SarnJaoTRUE = () => {
   const [godPath, setGodPath] = useState("");
   const [parent, setParent] = useState(null);
 
-
   useEffect(() => {
     if (godPath === "") {
       setGodPath(god[Math.floor(god.length * Math.random())]);
@@ -38,7 +37,10 @@ export const SarnJaoTRUE = () => {
         <div className="h-full w-full flex justify-center mt-32">
           <div className="flex flex-col">
             <div className="flex flex-row justify-center">
-              <img src="sarn-component/pole-default.png" className="" />
+              <img
+                src="/sarnjao/sarn-component/pole-default.png"
+                className=""
+              />
               <div>
                 <div className="flex justify-center">
                   <img
@@ -48,16 +50,24 @@ export const SarnJaoTRUE = () => {
                     }}
                   />
                 </div>
-                <img src="sarn-component/bottom.jpg" width="500" className="" />
+                <img
+                  src="/sarnjao/sarn-component/bottom.jpg"
+                  width="500"
+                  className=""
+                />
               </div>
-              <img src="sarn-component/pole-flip.png" className="" />
+              <img src="/sarnjao/sarn-component/pole-flip.png" className="" />
             </div>
             <div className="flex flex-row justify-center">
-              <img src="sarn-component/fetish-2.png" width="190" className="" />
+              <img
+                src="/sarnjao/sarn-component/fetish-2.png"
+                width="190"
+                className=""
+              />
             </div>
             <img
               className="mt-2"
-              src="sarn-component/table.png"
+              src="/sarnjao/sarn-component/table.png"
               style={{
                 height: "250px",
               }}
