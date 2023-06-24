@@ -66,13 +66,6 @@ export const SarnJaoTRUE = (props: IProps) => {
               </div>
               <img src="/sarnjao/sarn-component/pole-flip.png" className="" />
             </div>
-            {/* <div className="flex flex-row justify-center">
-              <img
-                src="/sarnjao/sarn-component/fetish-2.png"
-                width="190"
-                className=""
-              />
-            </div> */}
             <img
               className="mt-2"
               src="/sarnjao/sarn-component/table.png"
