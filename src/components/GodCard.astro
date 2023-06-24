@@ -1,10 +1,15 @@
 ---
-const {image, name} = Astro.props;
+const { image, name } = Astro.props;
 ---
 
-<a href=`/god/${name}` class="p-3 shadow-md rounded-xl">
-    <img src={image} style={{
-        height: "30vh"
-    }} />
+<div>
+  <a href=`/sarnjao/god/${name}` class="p-3 shadow-md rounded-xl bg-red-300">
+    <img
+      src={image}
+      style={{
+        height: "30vh",
+      }}
+    />
     <h1 class="text-2xl font-semibold text-center">{name}</h1>
-</a>
+  </a>
+</div>

@@ -1,18 +1,12 @@
 import { TopComponent } from "./sarn/TopComponent";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-import { god } from "./god";
+interface IProps {
+  image: string;
+}
 
-export const SarnJaoTRUE = () => {
+export const SarnJaoTRUE = (props: IProps) => {
   const [wish, setWish] = useState("ขอให้ PETEZA เลิกมีพฤติกรรมเกียน❓");
-  const [godPath, setGodPath] = useState("");
-  const [parent, setParent] = useState(null);
-
-  useEffect(() => {
-    if (godPath === "") {
-      setGodPath(god[Math.floor(god.length * Math.random())]);
-    }
-  }, []);
 
   function handleSetWish(e: any) {
     setWish(e.target.value);
@@ -20,11 +14,7 @@ export const SarnJaoTRUE = () => {
   }
 
   function handleMakeWish(e: any) {
-    alert(wish);
-  }
-
-  function handleDragEnd({ over }: any) {
-    setParent(over ? over.id : null);
+    alert(wish + "\n" + "สมหวัง สมปรารถนาจ้าาาาาาาาาาาาาา");
   }
 
   return (
@@ -44,7 +34,7 @@ export const SarnJaoTRUE = () => {
               <div>
                 <div className="flex justify-center">
                   <img
-                    src={godPath}
+                    src={`/sarnjao/god/${props.image}`}
                     style={{
                       height: "500px",
                     }}
@@ -58,13 +48,13 @@ export const SarnJaoTRUE = () => {
               </div>
               <img src="/sarnjao/sarn-component/pole-flip.png" className="" />
             </div>
-            <div className="flex flex-row justify-center">
+            {/* <div className="flex flex-row justify-center">
               <img
                 src="/sarnjao/sarn-component/fetish-2.png"
                 width="190"
                 className=""
               />
-            </div>
+            </div> */}
             <img
               className="mt-2"
               src="/sarnjao/sarn-component/table.png"
