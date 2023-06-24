@@ -5,6 +5,13 @@ interface IProps {
   image: string;
 }
 
+const wordExtensionList = [
+  "สมหวัง สมปรารถนาจ้าาาาาาาาาาาาาา",
+  "จริงพี่ พี่ว่าไง ผมก็ว่างั้น",
+  "เคฮ้าฟฟฟฟฟฟฟฟฟฟฟฟฟ ฟู่วววววววววววววว",
+  "เนื่องจากคุณมีพฤติกรรมเกียนที่มากเกินไป คำขอของคุณถูกปฎิเสธ ฮือออออออออออออออออออออ",
+];
+
 export const SarnJaoTRUE = (props: IProps) => {
   const [wish, setWish] = useState("ขอให้ PETEZA เลิกมีพฤติกรรมเกียน❓");
 
@@ -14,7 +21,18 @@ export const SarnJaoTRUE = (props: IProps) => {
   }
 
   function handleMakeWish(e: any) {
-    alert(wish + "\n" + "สมหวัง สมปรารถนาจ้าาาาาาาาาาาาาา");
+    const state = Math.floor(Math.random() * 3);
+    if (state === 0) {
+      alert(
+        wish +
+          "\n--------------------------------------\n" +
+          wordExtensionList[
+            Math.floor(wordExtensionList.length * Math.random())
+          ]
+      );
+    } else {
+      window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    }
   }
 
   return (
