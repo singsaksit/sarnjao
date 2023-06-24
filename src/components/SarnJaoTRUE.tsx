@@ -49,13 +49,13 @@ export const SarnJaoTRUE = () => {
             <textarea
               value={wish}
               onChange={handleSetWish}
-              className="text-lg rounded-lg bg-red-100"
+              className="text-lg rounded-lg bg-red-100 p-1"
               id="wish-area"
               // title="?"
             />
             <button
               onClick={handleMakeWish}
-              className="mt-3 p-3 bg-slate-400 font-bold rounded-lg">
+              className="mt-3 p-3 bg-slate-400 font-bold rounded-lg mb-10">
               <p className="text-xl">Make a Wish❓</p>
             </button>
           </div>
