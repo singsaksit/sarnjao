@@ -31,12 +31,21 @@ export const SarnJaoTRUE = () => {
         {/* App Section */}
         <div className="h-full w-full flex justify-center mt-32">
           <div className="flex flex-col">
-            <img
-              src={godPath}
-              style={{
-                height: "500px",
-              }}
-            />
+            <div className="flex flex-row justify-center">
+              <img src="sarn-component/pole-default.png" className="" />
+              <div>
+                <div className="flex justify-center">
+                  <img
+                    src={godPath}
+                    style={{
+                      height: "500px",
+                    }}
+                  />
+                </div>
+                <img src="sarn-component/bottom.jpg" width="500" className="" />
+              </div>
+              <img src="sarn-component/pole-flip.png" className="" />
+            </div>
             <div className="flex flex-row justify-center">
               <img src="sarn-component/fetish-1.png" width="190" className="" />
               <img src="sarn-component/fetish-2.png" width="190" className="" />
