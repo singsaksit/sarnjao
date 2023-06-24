@@ -31,8 +31,8 @@ export const TopComponent = () => {
             width="190"
             className=""
           />
-          <img src="sarn-component/kom-fai-flip.png" width="190" className="" />
-          <img src="sarn-component/kom-fai-flip.png" width="190" className="" />
+          {/* <img src="sarn-component/kom-fai-flip.png" width="190" className="" />
+          <img src="sarn-component/kom-fai-flip.png" width="190" className="" /> */}
         </div>
       </div>
     </div>
