@@ -1,12 +1,6 @@
 ---
 import GodCard from "./GodCard.astro";
-
-const allLink = [
-  "https://skillissue.gay",
-  "https://twitter.com/LeomotorsTH/status/1664910625389047813",
-  "https://youtu.be/dQw4w9WgXcQ",
-];
-
+import { LeomotorsButton } from "../components/LeomotorsButton";
 ---
 
 <div>
@@ -18,10 +12,7 @@ const allLink = [
       <GodCard image="god/Kwanyin.jpg" name="Kwanyin" />
       <GodCard image="god/phrom.jpg" name="Phrom" />
       <GodCard image="god/shiva.jpg" name="Shiva" />
-      <div class="p-3 shadow-md rounded-xl bg-red-300">
-        <LeomotorsButton />
-        <h1 class="text-2xl font-semibold text-center">ลีโอมอเตอร์ส❓</h1>
-      </div>
+      <LeomotorsButton />
     </div>
   </div>
 </div>
