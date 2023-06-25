@@ -17,7 +17,7 @@ export const SarnJaoTRUE = (props: IProps) => {
 
   function handleSetWish(e: any) {
     setWish(e.target.value);
-    console.log(wish);
+    // console.log(wish);
   }
 
   function handleMakeWish(e: any) {

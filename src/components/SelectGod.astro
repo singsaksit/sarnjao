@@ -6,7 +6,6 @@ const allLink = [
   "https://twitter.com/LeomotorsTH/status/1664910625389047813",
 ];
 
-const whatIsThisLink = allLink[Math.floor(allLink.length * Math.random())];
 ---
 
 <div>
@@ -19,14 +18,7 @@ const whatIsThisLink = allLink[Math.floor(allLink.length * Math.random())];
       <GodCard image="god/phrom.jpg" name="Phrom" />
       <GodCard image="god/shiva.jpg" name="Shiva" />
       <div class="p-3 shadow-md rounded-xl bg-red-300">
-        <a href={whatIsThisLink}>
-          <img
-            src="/sarnjao/god/lnw.jpg"
-            style={{
-              height: "30vh",
-            }}
-          /></a
-        >
+        <LeomotorsButton />
         <h1 class="text-2xl font-semibold text-center">ลีโอมอเตอร์ส❓</h1>
       </div>
     </div>
