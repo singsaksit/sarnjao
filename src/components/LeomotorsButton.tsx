@@ -13,6 +13,10 @@ export const LeomotorsButton = () => {
 
   const [currentLink, setCurrentLink] = useState(getLink());
 
+  useEffect(() => {
+    setCurrentLink(getLink());
+  });
+
   return (
     <div className="p-3 shadow-md rounded-xl bg-red-300">
       <a href={currentLink}>
