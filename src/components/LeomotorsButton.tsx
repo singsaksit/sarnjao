@@ -14,7 +14,10 @@ export const LeomotorsButton = () => {
   const [currentLink, setCurrentLink] = useState(getLink());
 
   useEffect(() => {
-    setCurrentLink(getLink());
+    const interval = setInterval(() => {
+      setCurrentLink(getLink());
+    }, 1000);
+    return () => clearInterval(interval);
   });
 
   return (
